@@ -17,16 +17,47 @@ To install this repo on can simply clone or fork it and following the instructio
 
 # Usage
 
+To start tracking in one of the video's one would one of the following criteria. 
 
+- Installing mmtrackig
+- Download a checkpoint file or train a model
+- Define a config
+- run demo_sot.py in the demo folder with the following commands.
+```
+VID_PATH="LOCATION OF YOUR VIDEO FILE"
+CHECKPOINT_PATH="LOCATION OF YOUR CHECKPOINT FILE"
+CONFIG_PATH="LOCATION OF YOUR CONFIG FILE"
+python ./demo/demo_sot.py \                                            
+    ${CONFIG_PATH} \
+    --input ${VID_PATH} \
+    --checkpoint ${CONFIG_PATH} \ 
+--show 
+```
 
-# Support
-
+Select a box around the object by clicking and pressing enter.
 
 
 # Roadmap
+- [] Make data available
+- [] GUI creation for loss of tracking object
+- [] Create center evaluation metric for evaluation
+- [] Adapt data scheme to current format
+- [] Test mot solutions for moorea dataset
+- [] Create detection model for moorea dataset
+
 
 # Authors and acknowledgment
-Casper Thuis
+Casper Thuis -> name.name@gmail.com  
 
+We made use of the functionality of mmtracking framework 
+```
+@misc{mmtrack2020,
+    title={{MMTracking: OpenMMLab} video perception toolbox and benchmark},
+    author={MMTracking Contributors},
+    howpublished = {\url{https://github.com/open-mmlab/mmtracking}},
+    year={2020}
+}
+```
 
 # License
+
