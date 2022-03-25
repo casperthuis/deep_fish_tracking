@@ -115,9 +115,12 @@ ckpts
 *.pkl.json
 *.log.json
 work_dirs/
+data_vids/
 mmtrack/.mim
 
 # Pytorch
 *.pth
 *.py~
 *.sh~
+
+
